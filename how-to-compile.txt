@@ -1,1 +1,1 @@
-nvcc -O2 --std=c++17 -arch=sm_75 cuda_rle_bench.cu -o cuda_rle_bench.exe
+nvcc -O2 --std=c++17 -arch=sm_75 cuda-matrix-encoding-benchmark.cu -o cuda-matrix-encoding-benchmark.out
