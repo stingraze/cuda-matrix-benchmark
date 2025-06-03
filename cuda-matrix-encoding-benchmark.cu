@@ -1,5 +1,6 @@
 /**
- * cuda_rle_bench.cu  ── fixed & tuned version
+ * (C)Tsubasa Kato - 2025/6/3 - Made with help of ChatGPT o3 & Perplexity Pro
+ * cuda-matrix-encoding-benchmark.cu  ── fixed & tuned version
  *   • matrix-encode kernel unchanged except for minor tidy-up
  *   • compress kernel now:
  *         – uses 64-bit-safe atomicAdd
