@@ -157,6 +157,11 @@ int main(int argc, char **argv)
     printf("read %zu B\n", in_sz);
 
     const size_t layers = (in_sz + LAYER_SIZE - 1) / LAYER_SIZE;
+    if (layers == 0) {
+        fprintf(stderr, "input file is empty\n");
+        free(h_in);
+        return 1;
+    }
     if (layers > MAX_LAYERS) { fprintf(stderr,"too big (>%d layers)\n", MAX_LAYERS); return 1; }
 
     /* ── device allocations ─────────────────────────────────────────── */
